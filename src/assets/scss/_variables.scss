@@ -60,6 +60,8 @@ $alert-colors: (
     ),
 ) !default;
 
+$assets-path: '/assets' !default;
+
 // $btn-colors uses $theme-colors background color by default
 $btn-colors: (
   primary: (
@@ -72,7 +74,7 @@ $btn-colors: (
       text-color: #fff,
   ),
   warning: (
-      text-color: #fff,
+      text-color: #000,
   ),
   danger: (
       text-color: #fff,
@@ -81,12 +83,12 @@ $btn-colors: (
       text-color: #fff,
   ),
   light: (
-      text-color: #818182,
+      text-color: #000,
   ),
   info: (
-      text-color: #fff,
+      text-color: #000,
   ),
-);
+) !default;
 
 
 // Body
@@ -1218,7 +1220,7 @@ $pagination-color:                  $link-color !default;
 $pagination-bg:                     $white !default;
 $pagination-border-width:           $border-width !default;
 $pagination-border-radius:          $border-radius !default;
-$pagination-margin-start:           -$pagination-border-width !default;
+$pagination-margin-start:           calc(#{$pagination-border-width} * -1) !default;
 $pagination-border-color:           $gray-300 !default;
 
 $pagination-focus-color:            $link-hover-color !default;
