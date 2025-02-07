@@ -326,6 +326,10 @@
 			{
 				"name": "Leaflet Map",
 				"url": "ui-map-leaflet.html"
+			},
+			{
+				"name": "OpenLayers Map",
+				"url": "ui-map-openlayers.html"
 			}
     ]
   },
@@ -461,7 +465,7 @@
   {
     "name": "Donate",
     "key": "error",
-    "url": "https://github.com/zuramai/mazer#donation",
+    "url": "https://github.com/sponsors/zuramai",
     "icon": "cash"
   }
 ]
